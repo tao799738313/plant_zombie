@@ -1,0 +1,202 @@
+	body {
+		width: 100%;
+		height: 100%;
+	}
+	
+	#bg {
+		width: 1140px;
+		/*  width: 1600px;*/
+		height: 675px;
+		overflow: hidden;
+		/*margin: 0 auto;
+				margin-top: 5%;*/
+		position: relative;
+	}
+	
+	#map {
+		width: 1500px;
+		height: 675px;
+		transform: translateX(-24%);
+		transition: all 2s;
+		/* 透明度会跟z-index冲突不知道为什么？ */
+		opacity: 0.5;
+		position: absolute;
+		top: 0;
+		left: 0;
+		z-index: 5px;
+	}
+	
+	.game_plant_card {
+		z-index: 100;
+	}
+	
+	.mouse_img {
+		position: absolute;
+		opacity: 0.8;
+		z-index: 30;
+	}
+	/*#all_box{
+				position: absolute;	
+				top: 100px;
+				left: 250px;
+				z-index: 0;			
+			}*/
+	
+	.box {
+		position: absolute;
+		width: 80px;
+		height: 98px;
+		border: 1px solid transparent;
+		z-index: 0;
+	}
+	
+	.box:hover {
+		border-color: red;
+	}
+	
+	.plant:hover {
+		border-color: red;
+	}
+	
+	#card_bar {
+		width: 100px;
+		position: absolute;
+		top: 60px;
+		left: 100px;
+	}
+	
+	#card_bar>img {
+		width: 100px;
+		height: 60px;
+	}
+	
+	#tool {
+		position: absolute;
+		top: 15px;
+		left: 250px;
+	}
+	
+	#shovel {
+		position: absolute;
+		z-index: 100;
+		top: 0;
+		left: 130px;
+		width: 76px;
+		height: 34px;
+	}
+	
+	#sun_num {
+		width: 40px;
+		height: 20px;
+		position: absolute;
+		top: 5px;
+		left: 60px;
+		font-size: 20px;
+	}
+	
+	#stop_btn {
+		width: 112px;
+		height: 40px;
+		position: absolute;
+		top: -5px;
+		left: -150px;
+		font-size: 20px;
+		text-align: center;
+		line-height: 40px;
+		background: url(../img/Button.png) no-repeat;
+		cursor: pointer;
+	}
+	
+	#sun_bar {
+		width: 850px;
+		position: absolute;
+		top: -80px;
+		left: 250px;
+	}
+	
+	.sun {
+		position: absolute;
+		top: 0;
+		z-index: 100;
+	}
+	
+	#zombie_bar {
+		position: absolute;
+		top: 30px;
+		left: 1100px;
+	}
+	
+	.zombie {
+		position: absolute;
+		width: 82px;
+		height: 100px;
+	}
+	
+	#showZombie_bar {
+		width: 100px;
+		height: 300px;
+		position: absolute;
+		top: 100px;
+		left: 750px;
+	}
+	
+	#choose_plant {
+		width: 470px;
+		height: 520px;
+		position: absolute;
+		top: 60px;
+		left: 250px;
+		padding-top: 40px;
+		z-index: 50;
+		background: url(../img/SeedChooser_Background.png)no-repeat;
+	}
+	
+	#choose_plant>img {
+		width: 88px;
+	}
+	
+	#choose_plant>img:nth-of-type(5n+1) {
+		margin-left: 12px;
+	}
+	
+	#choose_ok {
+		background: url(../img/Button.png) no-repeat;
+		position: absolute;
+		bottom: 20px;
+		left: 160px;
+		width: 112px;
+		height: 40px;
+		font-size: 20px;
+		line-height: 40px;
+		text-align: center;
+		cursor: pointer;
+	}
+	
+	.box_plant {
+		z-index: 51;
+		position: absolute;
+		margin: 0 auto;
+		text-align: center;
+	}
+	
+	#prompt {
+		position: absolute;
+		top: 30px;
+		left: 1200px;
+		width: 350px;
+		height: 500px;
+		background-color: wheat;
+	}
+	
+	.prompt_text {
+		font-size: 16px;
+	}
+	
+	.peaBullet {
+		width: 50px;
+		height: 32px;
+		position: absolute;
+		top: 5px;
+		left: 30px;
+		z-index: 52px;
+	}
